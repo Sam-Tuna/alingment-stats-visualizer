@@ -7,4 +7,4 @@ samtools idxstats alignment.bam | sort -n -r -k 3 > alignment.stats
 
 To run extnames.py a list of names for the sequences in the NCBI 16S RefSeq database is needed. It's possible to generate one having the database downloaded in a fasta file and running
 ```
-grep ">" NCBI-16S.fasta > names.txt"
+grep ">" NCBI-16S.fasta > names.txt
