@@ -9,4 +9,4 @@ To run extnames.py a list of names for the sequences in the NCBI 16S RefSeq data
 ```
 grep ">" NCBI-16S.fasta > names.txt
 
-Then open the vizualizer.R in RStudio and generate classification tables of the genera and species present.
+Then open the visualization.R in RStudio and generate classification tables of the genera and species present.
