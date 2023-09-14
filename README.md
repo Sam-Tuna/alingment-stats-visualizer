@@ -1,5 +1,5 @@
 # Alingment Stats Visualizer
-The [NCBI 16S RefSeq database](https://www.ncbi.nlm.nih.gov/refseq/targetedloci/16S_process/) is probably the most complete database for 16S sequences, but it's not integrated in any metagenomic classification pipeline, so a bit of patchwork is needed to use it. This repository contains 2 scripts that provide said patchwork.
+The [NCBI 16S RefSeq database](https://www.ncbi.nlm.nih.gov/refseq/targetedloci/16S_process/) is probably the biggest database for 16S sequences, and you can align reads to it for classification. This repository contains 2 scripts that help with visualizing these alignment results.
 For our study we used minimap2 to make the alignments, but it should work with any .bam file [samtools](https://github.com/samtools/samtools) can extract the stats from. To do that run:
 ```
 samtools idxstats alignment.bam | sort -n -r -k 3 > alignment.stats
